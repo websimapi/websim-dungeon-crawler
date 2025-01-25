@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Dungeon Crawler</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="game.js"></script>
+</head>
+<body>
+  <div class="game-container">
+    <div class="hud">
+      <div class="health-bar">
+        <div class="current-health"></div>
+      </div>
+      <div class="score">SCORE: 0</div>
+    </div>
+    <svg class="game-viewport" viewBox="0 0 400 400">
+      <rect class="map-bg" width="600" height="600" fill="#2a2a2a"/>
+      <g class="game-world">
+        <!-- Walls and obstacles will be generated here -->
+      </g>
+      <circle class="player" cx="200" cy="200" r="12" fill="#7ec8e3"/>
+      <g class="enemies"></g>
+    </svg>
+  </div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
